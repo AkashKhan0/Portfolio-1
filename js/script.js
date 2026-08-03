@@ -26,3 +26,24 @@ document.querySelectorAll(".read-btn").forEach(button => {
 
 });
 
+
+const elements = document.querySelectorAll(".left, .right, .up, .down");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            // Screen থেকে বের হলে animation reset হবে
+            entry.target.classList.remove("show");
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+elements.forEach(el => observer.observe(el));
