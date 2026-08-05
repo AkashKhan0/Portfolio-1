@@ -18,6 +18,7 @@ html{
 body {
     background-color: var(--color-base2);
     color: var(--color-body);
+    position: relative;
 }
 
 
@@ -42,6 +43,53 @@ a:hover {
 
 img {
     width: 100%;
+}
+
+.sam_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+.sam_logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--color-brand);
+}
+.name_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.name_info p {
+    margin-bottom: -2px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+.name_info span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.home_bg {
+    position: relative;
+}
+.home_bg_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/sam2.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: .5;
+    z-index: -1;
 }
 
 .text-brand {
@@ -151,6 +199,7 @@ img {
         height: 50px;
         object-fit: cover;
         border-radius: 50%;
+        border: 1px solid var(--color-brand);
     }
     .navbar {
         width: 70%;
@@ -253,7 +302,7 @@ img {
 /* read more option css */
 .intro {
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -298,7 +347,7 @@ img {
 .ul_custom li::before {
     content: "🢚";
     margin-right: 10px;
-    color: rgb(33, 33, 33); /* Optional */
+    color: rgb(203, 203, 203); /* Optional */
 }
 
 /* Professional Network css */
@@ -490,4 +539,92 @@ img {
 
 .delay-3{
     transition-delay: .6s;
+}
+
+/* profile image design */
+
+.profile-wrapper{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+/* Image */
+
+.profile-image{
+    position:absolute;
+    inset:20px;
+    border-radius:50%;
+    overflow:hidden;
+    z-index:3;
+}
+
+.profile-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    overflow: hidden;
+}
+
+/* Golden Circle */
+
+.gold-ring{
+    position:absolute;
+    inset:15px;
+    border-radius:50%;
+    border:1.8px solid rgba(255,185,70,.8);
+    z-index:2;
+}
+
+
+.glow-ring{
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+}
+
+.gold-ring::before{
+    content:"";
+    position:absolute;
+    width:50px;
+    height:50px;
+    border-radius:10%;
+    background:#3eccff82;
+    filter:blur(15px);
+
+    top:10px;
+    right:-40px;
+}
+
+.gold-ring::after{
+    content:"";
+    position:absolute;
+    width:30px;
+    height:30px;
+    border-radius:10%;
+    background:#3ecbff;
+    filter:blur(15px);
+
+    bottom:150px;
+    left:50px;
+}
+
+.ai_bg {
+    position: relative;
+}
+.ai_bg_img {
+    position: fixed;
+    background-image: url('../images/ai_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+}
+.p1 {
+    font-size: 13px;
+    color: var(--color-brand);
 }

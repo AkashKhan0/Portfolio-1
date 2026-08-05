@@ -14,17 +14,23 @@
     data-bs-target="#navbar"
     data-bs-smooth-scroll="true"
     tabindex="0">
+
+    <div class="ai_bg_img"></div>
+
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand mx-lg-auto" href="#home">
-          <span class="h3 fw-bold">Sam Suseelan</span>
+        <div class="sam_logo">
           <img
             src="images/sam.jpg"
-            class="d-none d-lg-block rounded-circle"
+            class="rounded-circle"
             alt=""
           />
-        </a>
+          <div class="name_info">
+            <p class="h4 fw-bold text-brand">Sam Suseelan</p>
+            <span>AI Researcher</span>
+          </div>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +54,10 @@
               <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#presence">Online Presence</a>
+              <a class="nav-link" href="#presence">Network</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -64,34 +73,77 @@
       <!-- HOME -->
       <section id="home" class="full-height px-lg-5">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-10 over_hide">
-              <div class="d-block d-lg-none text-center img-t">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-8 over_hide">
+
+              <!-- Mobile Image -->
+              <div class="d-block d-lg-none text-center img-t mb-4">
                   <img src="images/sam.jpg"
-                      class="img-fluid rounded-circle"
+                      class="img-fluid rounded-circle shadow"
                       alt="Sam Suseelan"
-                      style="width: 220px; height: 220px; object-fit: cover;"
-                  />
+                      style="width:220px; height:220px; object-fit:cover;">
               </div>
 
               <h1 class="display-4 fw-bold right" data-aos="fade-up">
-                I am <span class="text-brand">Sam Suseelan. </span>
+                  I am <span class="text-brand">Sam Suseelan.</span>
               </h1>
+
               <h4 class="display-7 my-3 fw-bold" data-aos="fade-up">
-                Independent Researcher | Aviation AI Specialist | IT Operations Leader
+                  Independent Researcher | Aviation AI Specialist | IT Operations Leader
               </h4>
-              <p class="lead left mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                My research explores the use of AI in aviation safety, predictive maintenance, fuel optimization, cybersecurity, and intelligent aviation systems. I am passionate about developing technologies that enhance operational efficiency, improve safety, and support sustainability across modern aviation.
-                </p>
-                <p class="lead right mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                  Through my research and professional expertise, I aim to bridge the gap between artificial intelligence and aviation, contributing to the development of smarter, safer, and more efficient aviation systems for the future.
-                </p>
+
+              <p class="lead left mt-2 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300">
+                  My research explores the use of AI in aviation safety, predictive
+                  maintenance, fuel optimization, cybersecurity, and intelligent
+                  aviation systems. I am passionate about developing technologies
+                  that enhance operational efficiency, improve safety, and support
+                  sustainability across modern aviation.
               </p>
-              <div data-aos="fade-up" data-aos-delay="600" class="right">
-                <a href="https://scholar.google.com/citations?user=QdumysMAAAAJ&hl=en" target="_blank" class="btn btn-brand me-3">🕮 Read my articles</a>
+
+              <p class="lead right mt-2 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="400">
+                  Through my research and professional expertise, I aim to bridge the
+                  gap between artificial intelligence and aviation, contributing to
+                  the development of smarter, safer, and more efficient aviation
+                  systems for the future.
+              </p>
+
+              <div data-aos="fade-up"
+                  data-aos-delay="600"
+                  class="right">
+                  <a href="https://scholar.google.com/citations?user=QdumysMAAAAJ&hl=en"
+                      target="_blank"
+                      class="btn btn-brand me-3">
+                      🕮 Read my articles
+                  </a>
               </div>
-            </div>
+
           </div>
+
+    <!-- Right Image (Large Screen Only) -->
+    <div class="col-lg-4 d-none d-lg-flex justify-content-center"
+        data-aos="fade-left"
+        data-aos-duration="1200">
+        <!-- <img src="images/sam2.png"
+            alt="Sam Suseelan"
+            class="img-fluid rounded-circle shadow-lg"
+            style="width:380px; height:380px; object-fit:cover;"> -->
+
+            <div class="profile-wrapper">
+              <div class="glow-ring"></div>
+              <div class="gold-ring"></div>
+              <div class="profile-image">
+                  <img src="images/sam2.png" alt="Sam">
+              </div>
+          </div>
+    </div>
+
+</div>
+
         </div>
       </section>
       <!-- //HOME -->
@@ -186,9 +238,6 @@
                 <div class="col-12">
                   <div class="bg-base p-4 rounded-4 shadow-effect left">
                     <h4 class="uppercase">🎓 CAREER</h4>
-                    <p class="text-brand mb-2">
-                      Professional Journey
-                    </p>
                     <div class="read-more-content">
                       <p class="intro mb-2">
                       I have built my career in Information Technology and Operations Management while actively pursuing independent research in Aviation and Artificial Intelligence. My work focuses on exploring how machine learning, predictive analytics, and intelligent systems can be integrated into modern aviation operations to improve efficiency, safety, and decision-making.
@@ -205,10 +254,7 @@
 
                 <div class="col-12">
                   <div class="bg-base p-4 rounded-4 shadow-effect up">
-                    <h4 class="uppercase">🕵🏼‍♂️ Research Interests</h4>
-                    <p class="text-brand mb-2">
-                      Research and Publication
-                    </p>
+                    <h4 class="uppercase">🕵🏼‍♂️ Research and Publication</h4>
                     <div class="read-more-content">
                       <p class="intro mb-2">
                         My published research includes studies on AI-based predictive maintenance for general aviation aircraft, AI-driven fuel optimization for sustainable aviation operations, and AI-assisted detection of GNSS spoofing and GPS interference in aviation environments.
@@ -543,7 +589,10 @@
       <!-- FOOTER -->
       <footer class="py-4 px-lg-5 ftr_bg">
         <p class="mb-0 text-center">
-          © 2024 Aplus Advertising Limited. All rights reserved.
+          © 2026 Developed by Aplus Advertising Limited.
+        </p>
+        <p class="mb-0 text-center p1">
+          Sam Suseelan All rights reserved.
         </p>
       </footer>
       <!-- //FOOTER -->
