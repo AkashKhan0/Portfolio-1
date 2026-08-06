@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: rgb(229, 229, 229);
+    --color-heading: rgb(184, 184, 184);
+    --color-base: rgb(255, 255, 255);
+    --color-base2: #07090D;
+    --color-base3:rgb(255, 255, 255);
+    --color-brand: #D4AF37;
+    --color-brand2: #6f8809;
+    --sidbar-width: 240px;
+}
+
 .blog_page {
     border: 1px solid red;
 }
@@ -8,4 +21,15 @@
     position: fixed;
     top: 20px;
     left: 20px;
+}
+
+.blog-nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:var(--color-brand);
+    border: 1px solid var(--color-brand);
+    transition:.3s;
+    padding: 3px 12px;
+    border-radius: 6px;
 }
