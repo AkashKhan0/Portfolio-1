@@ -45,12 +45,14 @@ img {
     width: 100%;
 }
 
+
 .sam_logo {
     display: flex;
     align-items: center;
     gap: 10px;
     width: fit-content;
 }
+
 .sam_logo img {
     width: 40px;
     height: 40px;
