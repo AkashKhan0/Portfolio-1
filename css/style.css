@@ -21,6 +21,10 @@ body {
     position: relative;
 }
 
+.border {
+    border: 1px solid red;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
@@ -44,7 +48,6 @@ a:hover {
 img {
     width: 100%;
 }
-
 
 .sam_logo {
     display: flex;
@@ -191,6 +194,7 @@ img {
         align-items: center;
         justify-content: between;
         padding: 0;
+        gap: 20px;
     }
     .navbar-brand span {
         display: none;
@@ -210,10 +214,12 @@ img {
         border-radius: 50px;
     }
 }
-
-.navbar-nav {
-    /* border: 1px solid red; */
+@media (max-width: 992px) {
+  #navbarNav {
+    margin-top: 20px;
+  }
 }
+
 .navbar {
     background: linear-gradient(
         135deg,

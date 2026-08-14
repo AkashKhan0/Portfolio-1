@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# blog.html -> /blog
+RewriteCond %{THE_REQUEST} \s/+blog\.html[\s?] [NC]
+RewriteRule ^blog\.html$ /blog [R=301,L]
+
+# /blog -> blog.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/?$ blog.html [L]
+
+# Remove .html from other pages too
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Extensionless URL -> corresponding .html file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
